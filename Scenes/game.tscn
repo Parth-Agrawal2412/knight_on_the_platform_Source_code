@@ -71,6 +71,10 @@ sources/0 = SubResource("TileSetAtlasSource_bxopa")
 [node name="Player" parent="." unique_id=5701117 instance=ExtResource("1_ebmjs")]
 position = Vector2(89, 71)
 
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1821391594]
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
+
 [node name="Worls_tileset" parent="." unique_id=827085311 instance=ExtResource("2_qxrlw")]
 
 [node name="Layer1" type="TileMapLayer" parent="Worls_tileset" unique_id=1073281277]
@@ -90,3 +94,6 @@ position = Vector2(163, 86)
 
 [node name="Spikes" parent="." unique_id=465270913 instance=ExtResource("5_i6g32")]
 position = Vector2(155, 112)
+
+[node name="Coin3" parent="." unique_id=1658001081 instance=ExtResource("5_wowpa")]
+position = Vector2(308, 104)
