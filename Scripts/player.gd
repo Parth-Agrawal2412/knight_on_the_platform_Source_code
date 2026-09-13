@@ -25,3 +25,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = 0
 
 	move_and_slide()
+
+func die():
+	queue_free()
+	get_tree().reload_current_scene()

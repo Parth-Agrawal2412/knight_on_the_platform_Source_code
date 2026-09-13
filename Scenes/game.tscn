@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cv86xodnqw4s" path="res://Scenes/player.tscn" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://cb45ghnouxapq" path="res://Scenes/worls_tileset.tscn" id="2_qxrlw"]
 [ext_resource type="Texture2D" uid="uid://bprhysvr4ubmt" path="res://Assets/world_tileset_nature_ice_other.png" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://co21hx3pswk6l" path="res://Scenes/spikes.tscn" id="5_i6g32"]
 [ext_resource type="PackedScene" uid="uid://b116al2ohfr6d" path="res://Scenes/coin.tscn" id="5_wowpa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxopa"]
@@ -86,3 +87,6 @@ position = Vector2(237, 95)
 
 [node name="Coin2" parent="." unique_id=2034867237 instance=ExtResource("5_wowpa")]
 position = Vector2(163, 86)
+
+[node name="Spikes" parent="." unique_id=465270913 instance=ExtResource("5_i6g32")]
+position = Vector2(155, 112)
