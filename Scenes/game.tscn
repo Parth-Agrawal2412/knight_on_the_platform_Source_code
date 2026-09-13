@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cb45ghnouxapq" path="res://Scenes/worls_tileset.tscn" id="2_qxrlw"]
 [ext_resource type="Script" uid="uid://bwqofjlm5ssmp" path="res://Scripts/player.gd" id="2_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://bprhysvr4ubmt" path="res://Assets/world_tileset_nature_ice_other.png" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://b116al2ohfr6d" path="res://Scenes/coin.tscn" id="5_wowpa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxopa"]
 texture = ExtResource("4_3dryh")
@@ -81,3 +82,6 @@ tile_set = SubResource("TileSet_ql73s")
 [node name="Layer1" type="TileMapLayer" parent="Worls_tileset" unique_id=1281539314]
 use_parent_material = true
 tile_set = SubResource("TileSet_ql73s")
+
+[node name="Coin" parent="." unique_id=933766489 instance=ExtResource("5_wowpa")]
+position = Vector2(237, 95)
