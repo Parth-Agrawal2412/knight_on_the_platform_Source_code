@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://co21hx3pswk6l" path="res://Scenes/spikes.tscn" id="5_i6g32"]
 [ext_resource type="PackedScene" uid="uid://b116al2ohfr6d" path="res://Scenes/coin.tscn" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://di6yad0i43mhw" path="res://Scenes/one_way_platform.tscn" id="6_i6g32"]
+[ext_resource type="PackedScene" uid="uid://d3warworf3q7u" path="res://Scenes/moving_platform.tscn" id="7_1l0tm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxopa"]
 texture = ExtResource("4_3dryh")
@@ -101,3 +102,6 @@ position = Vector2(308, 104)
 
 [node name="One_way_platform" parent="." unique_id=1227080934 instance=ExtResource("6_i6g32")]
 position = Vector2(199, 92)
+
+[node name="Moving_Platform" parent="." unique_id=220793849 instance=ExtResource("7_1l0tm")]
+position = Vector2(142.56467, 31.334303)
