@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bprhysvr4ubmt" path="res://Assets/world_tileset_nature_ice_other.png" id="4_3dryh"]
 [ext_resource type="PackedScene" uid="uid://co21hx3pswk6l" path="res://Scenes/spikes.tscn" id="5_i6g32"]
 [ext_resource type="PackedScene" uid="uid://b116al2ohfr6d" path="res://Scenes/coin.tscn" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://di6yad0i43mhw" path="res://Scenes/one_way_platform.tscn" id="6_i6g32"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxopa"]
 texture = ExtResource("4_3dryh")
@@ -93,7 +94,10 @@ position = Vector2(237, 95)
 position = Vector2(163, 86)
 
 [node name="Spikes" parent="." unique_id=465270913 instance=ExtResource("5_i6g32")]
-position = Vector2(155, 112)
+position = Vector2(53, 112)
 
 [node name="Coin3" parent="." unique_id=1658001081 instance=ExtResource("5_wowpa")]
 position = Vector2(308, 104)
+
+[node name="One_way_platform" parent="." unique_id=1227080934 instance=ExtResource("6_i6g32")]
+position = Vector2(199, 84)

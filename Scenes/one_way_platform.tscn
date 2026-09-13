@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://di6yad0i43mhw"]
+
+[ext_resource type="Texture2D" uid="uid://bwp46rl2ih1ct" path="res://Assets/platforms.png" id="1_x1hij"]
+
+[node name="One_way_platform" type="CharacterBody2D" unique_id=1227080934]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=130302937]
+texture = ExtResource("1_x1hij")
+region_enabled = true
+region_rect = Rect2(16, 0, 32, 16)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=448340642]
+polygon = PackedVector2Array(0, -8, -14, -8, -16, -6, -16, -2, -16, -1, -14, 1, 14, 1, 16, -1, 16, -6, 14, -8)
+one_way_collision = true
