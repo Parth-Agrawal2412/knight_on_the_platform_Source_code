@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b116al2ohfr6d" path="res://Scenes/coin.tscn" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://di6yad0i43mhw" path="res://Scenes/one_way_platform.tscn" id="6_i6g32"]
 [ext_resource type="PackedScene" uid="uid://d3warworf3q7u" path="res://Scenes/moving_platform.tscn" id="7_1l0tm"]
+[ext_resource type="PackedScene" uid="uid://cm5noef88lk3e" path="res://Scenes/saw.tscn" id="8_v158k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxopa"]
 texture = ExtResource("4_3dryh")
@@ -105,3 +106,6 @@ position = Vector2(199, 92)
 
 [node name="Moving_Platform" parent="." unique_id=220793849 instance=ExtResource("7_1l0tm")]
 position = Vector2(142.56467, 31.334303)
+
+[node name="Saw" parent="." unique_id=664013397 instance=ExtResource("8_v158k")]
+position = Vector2(270, 47)
