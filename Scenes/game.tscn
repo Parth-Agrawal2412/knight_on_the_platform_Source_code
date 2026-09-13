@@ -100,4 +100,4 @@ position = Vector2(53, 112)
 position = Vector2(308, 104)
 
 [node name="One_way_platform" parent="." unique_id=1227080934 instance=ExtResource("6_i6g32")]
-position = Vector2(199, 84)
+position = Vector2(199, 92)
