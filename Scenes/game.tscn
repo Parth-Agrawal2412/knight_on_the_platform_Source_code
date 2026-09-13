@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://cv86xodnqw4s" path="res://Scenes/player.tscn" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://cb45ghnouxapq" path="res://Scenes/worls_tileset.tscn" id="2_qxrlw"]
-[ext_resource type="Script" uid="uid://bwqofjlm5ssmp" path="res://Scripts/player.gd" id="2_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://bprhysvr4ubmt" path="res://Assets/world_tileset_nature_ice_other.png" id="4_3dryh"]
 [ext_resource type="PackedScene" uid="uid://b116al2ohfr6d" path="res://Scenes/coin.tscn" id="5_wowpa"]
 
@@ -70,18 +69,20 @@ sources/0 = SubResource("TileSetAtlasSource_bxopa")
 
 [node name="Player" parent="." unique_id=5701117 instance=ExtResource("1_ebmjs")]
 position = Vector2(89, 71)
-script = ExtResource("2_wrm1d")
 
 [node name="Worls_tileset" parent="." unique_id=827085311 instance=ExtResource("2_qxrlw")]
 
-[node name="Layer0" type="TileMapLayer" parent="Worls_tileset" unique_id=1073281277]
+[node name="Layer1" type="TileMapLayer" parent="Worls_tileset" unique_id=1073281277]
 use_parent_material = true
 tile_map_data = PackedByteArray("AAAAAAcAAAAAAAAAAAABAAcAAAAAAAAAAAACAAcAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAIAAcAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAANAAcAAAAAAAAAAAAOAAcAAAAAAAAAAAAPAAcAAAAAAAAAAAAQAAcAAAAAAAAAAAARAAcAAAAAAAAAAAASAAcAAAAAAAAAAAATAAcAAAAAAAAAAAAUAAcAAAAAAAAAAAAVAAcAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAABAAYAAAAAAAAAAAACAAUAAAAAAAAAAAACAAQAAAAAAAAAAAACAAMAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_ql73s")
 
-[node name="Layer1" type="TileMapLayer" parent="Worls_tileset" unique_id=1281539314]
+[node name="Layer2" type="TileMapLayer" parent="Worls_tileset" unique_id=1281539314]
 use_parent_material = true
 tile_set = SubResource("TileSet_ql73s")
 
 [node name="Coin" parent="." unique_id=933766489 instance=ExtResource("5_wowpa")]
 position = Vector2(237, 95)
+
+[node name="Coin2" parent="." unique_id=2034867237 instance=ExtResource("5_wowpa")]
+position = Vector2(163, 86)
