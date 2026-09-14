@@ -72,9 +72,10 @@ sources/0 = SubResource("TileSetAtlasSource_bxopa")
 [node name="Game" type="Node2D" unique_id=2047081902]
 
 [node name="Player" parent="." unique_id=5701117 instance=ExtResource("1_ebmjs")]
-position = Vector2(89, 71)
+position = Vector2(126, 54)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1821391594]
+position = Vector2(-2, -2)
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
 
@@ -96,7 +97,7 @@ position = Vector2(237, 95)
 position = Vector2(163, 86)
 
 [node name="Spikes" parent="." unique_id=465270913 instance=ExtResource("5_i6g32")]
-position = Vector2(53, 112)
+position = Vector2(88, 112)
 
 [node name="Coin3" parent="." unique_id=1658001081 instance=ExtResource("5_wowpa")]
 position = Vector2(308, 104)

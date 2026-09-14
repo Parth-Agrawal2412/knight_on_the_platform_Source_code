@@ -83,12 +83,12 @@ animations = [{
 [node name="Saw" type="Area2D" unique_id=465270913]
 script = ExtResource("1_4qbox")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=797254364]
-polygon = PackedVector2Array(-5, -7, -9, 0, 8, 0, 4, -7)
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2094617325]
 sprite_frames = SubResource("SpriteFrames_ql73s")
 animation = &"Revolve"
 autoplay = "Revolve"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=811650519]
+polygon = PackedVector2Array(14, -14, 5, -19, -9, -17, -17, -7, -18, 1, -17, 11, -5, 18, 10, 16, 17, 4, 18, -6)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
