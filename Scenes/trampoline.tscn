@@ -68,7 +68,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"Jump",
-"speed": 11.0
+"speed": 13.0
 }]
 
 [node name="Trampoline" type="Area2D" unique_id=1449116807]
