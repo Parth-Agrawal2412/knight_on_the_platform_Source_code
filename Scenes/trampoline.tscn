@@ -67,6 +67,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_t8ysj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmfs6")
 }],
 "loop": 0,
 "name": &"Jump",
@@ -83,6 +86,6 @@ polygon = PackedVector2Array(-13, -2, -12, 4, 11, 4, 12, -2)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1800641017]
 sprite_frames = SubResource("SpriteFrames_2s8v0")
-animation = &"Default"
+animation = &"Jump"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
