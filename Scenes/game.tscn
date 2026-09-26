@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d3warworf3q7u" path="res://Scenes/moving_platform.tscn" id="7_1l0tm"]
 [ext_resource type="PackedScene" uid="uid://cm5noef88lk3e" path="res://Scenes/saw.tscn" id="8_v158k"]
 [ext_resource type="PackedScene" uid="uid://eggv1uftj0oa" path="res://Scenes/diamond.tscn" id="9_h4fw4"]
+[ext_resource type="PackedScene" uid="uid://boljtmk4hefmw" path="res://Scenes/trampoline.tscn" id="10_ldgsr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxopa"]
 texture = ExtResource("4_3dryh")
@@ -114,3 +115,6 @@ position = Vector2(270, 47)
 
 [node name="Diamond" parent="." unique_id=378534956 instance=ExtResource("9_h4fw4")]
 position = Vector2(63, 95)
+
+[node name="Trampoline" parent="." unique_id=1449116807 instance=ExtResource("10_ldgsr")]
+position = Vector2(343, 94)

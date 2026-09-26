@@ -3,7 +3,7 @@ class_name Player
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -250.0
-
+const TRAMPOLINE_JUMP_VELOCITY = -450
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -29,3 +29,11 @@ func _physics_process(delta: float) -> void:
 func die():
 	queue_free()
 	get_tree().reload_current_scene()
+	
+func trampoline():
+		velocity.y = TRAMPOLINE_JUMP_VELOCITY
+	
+	
+	
+	
+	
