@@ -160,7 +160,7 @@ animations = [{
 script = ExtResource("1_cvnsp")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1706892498]
-polygon = PackedVector2Array(-1, -7, -6, -7, -6, 12, 6, 12, 6, -7)
+polygon = PackedVector2Array(-1, -7, -6, -7, -6, 12, 3, 12, 6, -7)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=909328148]
 sprite_frames = SubResource("SpriteFrames_ql73s")
@@ -170,4 +170,4 @@ autoplay = "Idle"
 [node name="Player_Hitbox" type="Area2D" parent="." unique_id=2008351123]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player_Hitbox" unique_id=31607134]
-polygon = PackedVector2Array(-6, -8, -8, -8, -8, 12, 8, 12, 8, -8)
+polygon = PackedVector2Array(-6, -8, -8, -8, -8, 12, 4.7669353, 12.000001, 8, 12, 8, -8)
