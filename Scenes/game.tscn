@@ -92,29 +92,43 @@ tile_set = SubResource("TileSet_ql73s")
 use_parent_material = true
 tile_set = SubResource("TileSet_ql73s")
 
-[node name="Coin" parent="." unique_id=933766489 instance=ExtResource("5_wowpa")]
+[node name="Coins" type="Node" parent="." unique_id=24678111]
+
+[node name="Coin" parent="Coins" unique_id=933766489 instance=ExtResource("5_wowpa")]
 position = Vector2(237, 95)
 
-[node name="Coin2" parent="." unique_id=2034867237 instance=ExtResource("5_wowpa")]
+[node name="Coin2" parent="Coins" unique_id=2034867237 instance=ExtResource("5_wowpa")]
 position = Vector2(163, 86)
 
-[node name="Spikes" parent="." unique_id=465270913 instance=ExtResource("5_i6g32")]
-position = Vector2(88, 112)
-
-[node name="Coin3" parent="." unique_id=1658001081 instance=ExtResource("5_wowpa")]
+[node name="Coin3" parent="Coins" unique_id=1658001081 instance=ExtResource("5_wowpa")]
 position = Vector2(308, 104)
 
-[node name="One_way_platform" parent="." unique_id=1227080934 instance=ExtResource("6_i6g32")]
-position = Vector2(199, 92)
+[node name="Diamonds" type="Node" parent="." unique_id=38245078]
 
-[node name="Moving_Platform" parent="." unique_id=220793849 instance=ExtResource("7_1l0tm")]
-position = Vector2(142.56467, 31.334303)
-
-[node name="Saw" parent="." unique_id=664013397 instance=ExtResource("8_v158k")]
-position = Vector2(270, 47)
-
-[node name="Diamond" parent="." unique_id=378534956 instance=ExtResource("9_h4fw4")]
+[node name="Diamond" parent="Diamonds" unique_id=378534956 instance=ExtResource("9_h4fw4")]
 position = Vector2(63, 95)
 
-[node name="Trampoline" parent="." unique_id=1449116807 instance=ExtResource("10_ldgsr")]
+[node name="Trampoline" type="Node" parent="." unique_id=1967846019]
+
+[node name="Trampoline" parent="Trampoline" unique_id=1449116807 instance=ExtResource("10_ldgsr")]
 position = Vector2(343, 94)
+
+[node name="Spike" type="Node" parent="." unique_id=47079094]
+
+[node name="Spikes" parent="Spike" unique_id=465270913 instance=ExtResource("5_i6g32")]
+position = Vector2(88, 112)
+
+[node name="Saw" type="Node" parent="." unique_id=1500477229]
+
+[node name="Saw" parent="Saw" unique_id=664013397 instance=ExtResource("8_v158k")]
+position = Vector2(270, 47)
+
+[node name="One_way_platform" type="Node" parent="." unique_id=2112147279]
+
+[node name="One_way_platform" parent="One_way_platform" unique_id=1227080934 instance=ExtResource("6_i6g32")]
+position = Vector2(199, 92)
+
+[node name="Moving_platform" type="Node" parent="." unique_id=5482961]
+
+[node name="Moving_Platform" parent="Moving_platform" unique_id=220793849 instance=ExtResource("7_1l0tm")]
+position = Vector2(142.56467, 31.334303)
