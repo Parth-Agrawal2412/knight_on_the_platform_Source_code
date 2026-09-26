@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://eggv1uftj0oa"]
+
+[ext_resource type="Script" uid="uid://dnthtgnlrt543" path="res://Scripts/coin.gd" id="1_tjcex"]
+[ext_resource type="Texture2D" uid="uid://cgfwt0gns47bk" path="res://Assets/diamond-sh.png" id="2_tjcex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04a0d"]
+atlas = ExtResource("2_tjcex")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpe6a"]
+atlas = ExtResource("2_tjcex")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxitv"]
+atlas = ExtResource("2_tjcex")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qt87u"]
+atlas = ExtResource("2_tjcex")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drdxg"]
+atlas = ExtResource("2_tjcex")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vn7gf"]
+atlas = ExtResource("2_tjcex")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s617w"]
+atlas = ExtResource("2_tjcex")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_le2ed"]
+atlas = ExtResource("2_tjcex")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ql73s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04a0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpe6a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxitv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qt87u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drdxg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vn7gf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s617w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_le2ed")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Diamond" type="Area2D" unique_id=933766489]
+script = ExtResource("1_tjcex")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=101587158]
+polygon = PackedVector2Array(-3, -5, -5, -3, -5, 3, -3, 5, 3, 5, 5, 3, 5, -3, 3, -5)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=502013016]
+sprite_frames = SubResource("SpriteFrames_ql73s")
+autoplay = "default"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
