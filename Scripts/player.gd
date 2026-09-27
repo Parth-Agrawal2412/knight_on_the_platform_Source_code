@@ -17,12 +17,15 @@ func _physics_process(delta: float) -> void:
 	# 
 	if Input.is_action_pressed("Left"):
 		velocity.x = -SPEED
+		$AnimatedSprite2D.play("Run")
 		$AnimatedSprite2D.flip_h=true
 	elif Input.is_action_pressed("Right"):
 		velocity.x = SPEED
+		$AnimatedSprite2D.play("Run")
 		$AnimatedSprite2D.flip_h=false
 	else:
 		velocity.x = 0
+		$AnimatedSprite2D.play("Idle")
 
 	move_and_slide()
 

@@ -85,6 +85,11 @@ region = Rect2(224, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ql73s"]
 animations = [{
+"frames": [],
+"loop": 1,
+"name": &"Climb",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cvnsp")
@@ -100,6 +105,11 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"Jump",
 "speed": 5.0
 }, {
 "frames": [{
@@ -153,6 +163,11 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Run",
+"speed": 7.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"new_animation_2",
 "speed": 5.0
 }]
 
@@ -164,8 +179,9 @@ polygon = PackedVector2Array(-1, -7, -6, -7, -6, 12, 3, 12, 6, -7)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=909328148]
 sprite_frames = SubResource("SpriteFrames_ql73s")
-animation = &"Idle"
+animation = &"Run"
 autoplay = "Idle"
+frame_progress = 0.329499
 
 [node name="Player_Hitbox" type="Area2D" parent="." unique_id=2008351123]
 
